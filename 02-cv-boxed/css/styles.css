@@ -180,6 +180,20 @@ b.max-bold{ font-weight: 700; }
 .experience .list > li:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #555; }
 
+.telegram-bot {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width: 80%; 
+  margin-bottom: 30px;
+}
+
+.telegram-bot:hover{
+	-ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
 	
 
 /* ---------------------------------
@@ -224,4 +238,3 @@ b.max-bold{ font-weight: 700; }
 --------------------------------- */
 
 .copyright{ text-align: center; padding: 30px 0; background: #28023D; }
-
