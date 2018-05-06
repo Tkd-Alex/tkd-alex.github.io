@@ -49,6 +49,24 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 <body>
 	<h1 style="display: none;"> alessandromaggio.it | developer & bot addicted </h1>
 	<section class="intro-section">
@@ -280,14 +298,17 @@
 		
 	</section><!-- education-section -->
 	
-	<footer>
-		<p class="copyright">
+	<footer class="copyright">
+		<p class="mb-2">
 			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a title="colorlib" href="https://colorlib.com" target="_blank">Colorlib</a> | Edited by <a title="alessandromaggio" href="http://alessandromaggio.it" target="_blank">Tkd-Alex</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a title="colorlib" href="https://colorlib.com" target="_blank">Colorlib</a> | Edited by <a title="alessandromaggio" href="http://alessandromaggio.it" target="_blank">Tkd-Alex</a>
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 		</p>
 		<div class="fb-like" data-href="https://www.facebook.com/tkdalex.social" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-		<div class="fb-share-button" data-href="https://www.facebook.com/tkdalex.social/" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Ftkdalex.social%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+		<div class="fb-share-button" data-href="http://alessandromaggio.it" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Falessandromaggio.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"></a></div>
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+		<a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/TkdAxel">Follow @TkdAxel</a>
+		<div class="g-plus" data-action="share"></div>
 	</footer>
 	
 	
@@ -301,6 +322,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/progressbar.min.js"></script>
 	<script src="js/jquery.fluidbox.min.js"></script>
 	<script src="js/scripts.js"></script>
+
+	<style type="text/css">
+		.fb_iframe_widget{ vertical-align: top; } 
+		.fb_iframe_widget span{ vertical-align: top; }
+		.twitter-share-button{ margin-top: 4px }
+		.twitter-follow-button{ margin-top: 4px }
+		.g-plus{ margin-top: 4px }
+	</style>	
 	
 </body>
 </html>
