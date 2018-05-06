@@ -1,4 +1,6 @@
-# compress text, html, javascript, css, xml:
+RewriteCond %{HTTP_HOST} ^www\.example\.com$
+RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
