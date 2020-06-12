@@ -1,461 +1,537 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-	<head>
-		<title>alessandromaggio.it | fullstack developer & bot addicted</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="UTF-8">
+<head>
+	<title>alessandromaggio.it | fullstack developer & bot addicted</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/styles.min.css" type="text/css">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.min.css" type="text/css">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-		<!-- SEO -->
-		<meta name="description"
-			content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted">
-		<meta name="keywords"
-			content="HTML,CSS,JavaScript,Angular,PHP,Laravel,Python,Coding,Developer,GitHub,Backend,Frontend,OpenSource,Social,Coding,JS,Database,MongoDB,mySQL">
-		<meta name="author" content="Alessandro Maggio">
+	<!-- SEO -->
+	<meta name="description" content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted">
+	<meta name="keywords" content="HTML,CSS,JavaScript,Angular,PHP,Laravel,Python,Coding,Developer,GitHub,Backend,Frontend,OpenSource,Social,Coding,JS,Database,MongoDB,mySQL">
+	<meta name="author" content="Alessandro Maggio">
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159847646-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-159847646-1');
-        </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159847646-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-    	<!-- OpenGraph FB -->
-    	<meta property="og:image" content="https://alessandromaggio.it/images/opengraph-image.png" />
-    	<meta property="og:title" content="alessandromaggio.it | fullstack developer & bot addicted" />
-    	<meta property="og:site_name" content="alessandromaggio.it | fullstack developer & bot addicted">
-    	<meta property="og:description"
-    		content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted" />
-    	<meta property="og:url" content="https://alessandromaggio.it" />
-    	<meta property="og:type" content="portfolio" />
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-159847646-1');
+	</script>
 
-    	<!-- Twitter Card -->
-    	<meta name="twitter:image" content="https://alessandromaggio.it/images/opengraph-image.png">
-    	<meta name="twitter:card" content="https://alessandromaggio.it/images/opengraph-image.png">
-    	<meta name="twitter:title" content="alessandromaggio.it | fullstack developer & bot addicted">
-    	<meta name="twitter:description"
-    		content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted">
-    	<meta name="twitter:site" content="https://alessandromaggio.it">
+	<!-- OpenGraph FB -->
+	<meta property="og:image" content="https://alessandromaggio.it/images/opengraph-image.png" />
+	<meta property="og:title" content="alessandromaggio.it | fullstack developer & bot addicted" />
+	<meta property="og:site_name" content="alessandromaggio.it | fullstack developer & bot addicted">
+	<meta property="og:description" content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted" />
+	<meta property="og:url" content="https://alessandromaggio.it" />
+	<meta property="og:type" content="portfolio" />
 
-    	<meta http-equiv="Expires" content="30">
-    	<meta http-equiv="Cache-Control" content="public">
-		<meta http-equiv="Cache-Control" content="max-age=3600">
-		<meta http-equiv="Cache-Control" content="must-revalidate">
+	<!-- Twitter Card -->
+	<meta name="twitter:image" content="https://alessandromaggio.it/images/opengraph-image.png">
+	<meta name="twitter:card" content="https://alessandromaggio.it/images/opengraph-image.png">
+	<meta name="twitter:title" content="alessandromaggio.it | fullstack developer & bot addicted">
+	<meta name="twitter:description" content="alessandromaggio.it passionate about Computer Scientist and in particular of coding.\nfullstack developer & bot addicted">
+	<meta name="twitter:site" content="https://alessandromaggio.it">
 
-    </head>
+	<meta http-equiv="Expires" content="30">
+	<meta http-equiv="Cache-Control" content="public">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
 
-    <body>
-    	<h1 style="display: none;">alessandromaggio.it fullstack developer bot addicted alessandromaggio</h1>
-    	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
-    	
-    	<section class="intro-section" itemscope itemtype="http://schema.org/Person">
-    		<div class="container">
+</head>
 
-    			<div class="intro pt-5">
-    				<div class="row">
+<body>
+	<h1 style="display: none;">alessandromaggio.it fullstack developer bot addicted alessandromaggio</h1>
+	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
 
-    					<div class="col-sm-8 col-md-4 col-lg-3">
-    						<div class="profile-img margin-b-30"><img src="images/profile-1-500x500.png"
-    								alt="profile picture"></div>
-    					</div>
+	<section class="intro-section" itemscope itemtype="http://schema.org/Person">
+		<div class="container">
 
-    					<div class="col-sm-10 col-md-5 col-lg-6">
-    						<h2 itemprop="name"><b>Alessandro Maggio</b></h2>
-    						<h4 itemprop="jobTitle" class="font-yellow">Fullstack Developer</h4>
-    						<ul class="information margin-tb-20">
-    							<li><b class="font-yellow">BORN</b> : January 09, 1996</li>
-    							<li itemprop="email"><b class="font-yellow">EMAIL</b> : <a title="email"
-    									href="mailto:aalessandromaggio@gmail.com">aalessandromaggio@gmail.com</a></li>
-    							<li><b class="font-yellow">TELEGRAM</b> : <a title="telegram"
-    									href="https://t.me/TkdAlex">@TkdAlex</a>
-    							</li>
-    						</ul>
-    						<ul class="social-icons">
-    							<li><a title="github" href="https://github.com/Tkd-Alex"><i class="ion-social-github"></i></a></li>
-    							<li><a title="linkedin" href="https://www.linkedin.com/in/aalessandromaggio"><i class="ion-social-linkedin"></i></a></li>
-    							<li><a title="instagram" href="https://www.instagram.com/tkd_alex/"><i class="ion-social-instagram"></i></a></li>
-    							<li><a title="facebook" href="https://www.facebook.com/tkdalex.social"><i class="ion-social-facebook"></i></a></li>
-    							<li><a title="twitter" href="https://twitter.com/TkdAxel"><i class="ion-social-twitter"></i></a></li>
-    						</ul>
-    					</div>
+			<div class="intro pt-5">
+				<div class="row">
 
-    					<div class="col-sm-10 col-md-3 col-lg-3">
-    						<a title="Tkd-Alex Alessandro Maggio Curriculum" class="downlad-btn"
-    							href="europasscsv_en.pdf">Download CV</a>
-    					</div>
+					<div class="col-sm-8 col-md-4 col-lg-3">
+						<div class="profile-img margin-b-30"><img src="images/profile-1-500x500.png" alt="profile picture"></div>
+					</div>
 
-    				</div>
+					<div class="col-sm-10 col-md-5 col-lg-6">
+						<h2 itemprop="name"><b>Alessandro Maggio</b></h2>
+						<h4 itemprop="jobTitle" class="font-yellow">Fullstack Developer</h4>
+						<ul class="information margin-tb-20">
+							<li><b class="font-yellow">BORN</b> : January 09, 1996</li>
+							<li itemprop="email"><b class="font-yellow">EMAIL</b> : <a title="email" href="mailto:aalessandromaggio@gmail.com">aalessandromaggio@gmail.com</a></li>
+							<li><b class="font-yellow">TELEGRAM</b> : <a title="telegram" href="https://t.me/TkdAlex">@TkdAlex</a>
+							</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a title="github" href="https://github.com/Tkd-Alex"><i class="ion-social-github"></i></a></li>
+							<li><a title="linkedin" href="https://www.linkedin.com/in/aalessandromaggio"><i class="ion-social-linkedin"></i></a></li>
+							<li><a title="instagram" href="https://www.instagram.com/tkd_alex/"><i class="ion-social-instagram"></i></a></li>
+							<li><a title="facebook" href="https://www.facebook.com/tkdalex.social"><i class="ion-social-facebook"></i></a></li>
+							<li><a title="twitter" href="https://twitter.com/TkdAxel"><i class="ion-social-twitter"></i></a></li>
+						</ul>
+					</div>
 
-    			</div>
-    		</div>
-    	</section>
+					<div class="col-sm-10 col-md-3 col-lg-3">
+						<a title="Tkd-Alex Alessandro Maggio Curriculum" class="download-btn" href="europasscsv_it.pdf">Download CV</a>
+					</div>
 
-    	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
+				</div>
 
-    	<section class="about-section section">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-sm-12 col-md-3">
-    					<div class="heading">
-							<h3><b>About me</b></h3>
-							<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+			</div>
+		</div>
+	</section>
+
+	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
+
+	<section class="about-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="heading"><h3><b>About me</b></h3><h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6></div>
+				</div>
+				<div class="col-sm-12 col-md-9">
+					<p class="mb-4 biography">
+						Hi, welcome to my site! I'm Alessandro Maggio passionate about Computer Scientist and in
+						particular of coding. I started studying by myself programming languages at 14 years old,
+						improving my ability for problem solving over the years.
+						My first “big” project was <a href="https://www.deviantart.com/tkd-alex/art/MSN-Skin-Maker-3-0-154065228" title="msn-skin-maker">“MSN-Skin-Maker”</a>, developed in VB.Net as far back as 2010.
+						With the passing of the years and with the technological evolution I became passionate about web
+						programming, I was fascinated by the possibility of creating something accessible to everyone at
+						any time.
+						I conclude high school by presenting SchoolSocial, a social network developed in PHP and
+						Javascript with the aim of facilitating the exchange of school notes between teachers and
+						students.
+						Unfortunately I did not have the courage to carry it out, it could might become what is called
+						"electronic register" in Italy. In 2014 I join at the <a href="http://www.dmi.unict.it" title="university catania">University of Catania</a> where I had the opportunity to improve
+						myself, especially from the academic and social point of view.
+						Thanks to the university I was able to publish my first academic article with Prof. <a href="https://www.dmi.unict.it/~faro/" title="paper prof faro">Simone Faro</a>. I spend my
+						days developing scripts of any kind in order to automate as much as possible any operation, in
+						fact, I call myself a "bot addicted".
+						I complete the University with the thesis TELEGRAM-BOT TO HELP THE ORGANIZATION OF MEETINGS
+						BETWEEN FRIENDS AND COLLEAGUES” <a href="https://github.com/Tkd-Alex/Telegram-WhatWeDo-Bot/blob/master/SVILUPPO%20DI%20UN%20BOT%20TELEGRAM%20PER%20FACILITARE%20L'ORGANIZZAZIONE%20DI%20INCONTRI%20TRA%20AMICI%20E%20COLLEGHI.pdf"
+							title="paper thesis">(WDD-BOT)</a> supervised by Prof. <a href="http://www.dmi.unict.it/~tramonta/" title="prof tramontana"> Emiliano Tramontana.</a>
+						I decided to continue my academic career with Master’s course at the University of Catania in
+						“Network and Security Systems”.
+						I work as a fullstack developer on two personal project and as a backend developer (freelancer)
+						for a company based in Malta that deal with automation and social media. In the free time I try
+						to contribute to the open source community.
+						<br><br>I come from a small town in Sicily where Computer Scienze is undervalued maybe is for
+						this reason that i dream the big cities.
+						I’ve always thought that to be a great you have to dream big, that's what I'm doing and I think
+						I'm on the right way.
+					</p>
+					<p class="mb-5">Skills? Someone. The percentages that follow do not refer to how well I know programming language / framework is, but the experience gained over the years.
+					</p>
+
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".79"><div></div><h6 class="progress-title">HTML5 & CSS3</h6></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".60"><div></div><h6 class="progress-title">JAVASCRIPT</h6></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-30">
+								<div class="radial-progress" data-prog-percent=".65"><div></div><h6 class="progress-title">PHP</h6></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6 col-lg-3">
+							<div class="radial-prog-area margin-b-50">
+								<div class="radial-progress" data-prog-percent=".87"><div></div><h6 class="progress-title">PYTHON</h6></div>
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-9">
-						<p class="mb-4 biography">
-							Hi, welcome to my site! I'm Alessandro Maggio passionate about Computer Scientist and in
-							particular of coding. I started studying by myself programming languages at 14 years old,
-							improving my ability for problem solving over the years.
-							My first “big” project was <a
-								href="https://www.deviantart.com/tkd-alex/art/MSN-Skin-Maker-3-0-154065228"
-								title="msn-skin-maker">“MSN-Skin-Maker”</a>, developed in VB.Net as far back as 2010.
-							With the passing of the years and with the technological evolution I became passionate about web
-							programming, I was fascinated by the possibility of creating something accessible to everyone at
-							any time.
-							I conclude high school by presenting SchoolSocial, a social network developed in PHP and
-							Javascript with the aim of facilitating the exchange of school notes between teachers and
-							students.
-							Unfortunately I did not have the courage to carry it out, it could might become what is called
-							"electronic register" in Italy. In 2014 I join at the <a href="http://www.dmi.unict.it"
-								title="university catania">University of Catania</a> where I had the opportunity to improve
-							myself, especially from the academic and social point of view.
-							Thanks to the university I was able to publish my first academic article with Prof. <a
-								href="https://www.dmi.unict.it/~faro/" title="paper prof faro">Simone Faro</a>. I spend my
-							days developing scripts of any kind in order to automate as much as possible any operation, in
-							fact, I call myself a "bot addicted".
-							I complete the University with the thesis TELEGRAM-BOT TO HELP THE ORGANIZATION OF MEETINGS
-							BETWEEN FRIENDS AND COLLEAGUES” <a href="https://github.com/Tkd-Alex/Telegram-WhatWeDo-Bot/blob/master/SVILUPPO%20DI%20UN%20BOT%20TELEGRAM%20PER%20FACILITARE%20L'ORGANIZZAZIONE%20DI%20INCONTRI%20TRA%20AMICI%20E%20COLLEGHI.pdf"
-								title="paper thesis">(WDD-BOT)</a> supervised by Prof. <a
-								href="http://www.dmi.unict.it/~tramonta/" title="prof tramontana"> Emiliano Tramontana.</a>
-							I decided to continue my academic career with Master’s course at the University of Catania in
-							“Network and Security Systems”.
-							I work as a fullstack developer on two personal project and as a backend developer (freelancer)
-							for a company based in Malta that deal with automation and social media. In the free time I try
-							to contribute to the open source community.
-							<br><br>I come from a small town in Sicily where Computer Scienze is undevalued maybe is for
-							this reason that i dream the big cities.
-							I’ve always thought that to be a great you have to dream big, that's what I'm doing and I think
-							I'm on the right way.
-						</p>
-						<p class="mb-5">Skills? Someone. The percentages that follow do not refer to how well I know
-							programming
-							language / framework is, but the experience gained over the years.
-						</p>
-
-						<div class="row">
-							<div class="col-sm-6 col-md-6 col-lg-3">
-								<div class="radial-prog-area margin-b-30"><div class="radial-progress" data-prog-percent=".77"><div></div><h6 class="progress-title">HTML5 & CSS3</h6></div></div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
-								<div class="radial-prog-area margin-b-30"><div class="radial-progress" data-prog-percent=".64"><div></div><h6 class="progress-title">JAVASCRIPT</h6></div></div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
-								<div class="radial-prog-area margin-b-30"><div class="radial-progress" data-prog-percent=".60"><div></div><h6 class="progress-title">PHP</h6></div></div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-3">
-								<div class="radial-prog-area margin-b-50"><div class="radial-progress" data-prog-percent=".87"><div></div><h6 class="progress-title">PYTHON</h6></div></div>
-							</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-6">
+							<h4><b>Frontend skills</b></h4>
+							<div class="line-progress margin-b-20" data-prog-percent=".62"><div></div><p class="progress-title"><b>Angular</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".53"><div></div><p class="progress-title"><b>Ionic</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".71"><div></div><p class="progress-title"><b>Bootstrap</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".79"><div></div><p class="progress-title"><b>React</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".58"><div></div><p class="progress-title"><b>React Native</b></p></div>
 						</div>
-						<div class="row">
-							<div class="col-sm-12 col-md-12 col-lg-6">
-								<h4><b>Frontend skills</b></h4>
-								<div class="line-progress margin-b-20" data-prog-percent=".62"><div></div><p class="progress-title"><b>Angular</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".65"><div></div><p class="progress-title"><b>Ionic</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".71"><div></div><p class="progress-title"><b>Bootstrap</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".67"><div></div><p class="progress-title"><b>React</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".60"><div></div><p class="progress-title"><b>React Native</b></p></div>
-							</div>
-							<div class="col-sm-12 col-md-12 col-lg-6">
-								<h4><b>Backend skills</b></h4>
-								<div class="line-progress margin-b-20" data-prog-percent=".75"><div></div><p class="progress-title"><b>Laravel</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".60"><div></div><p class="progress-title"><b>NodeJS</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".80"><div></div><p class="progress-title"><b>MongoDB</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".65"><div></div><p class="progress-title"><b>PouchDB</b></p></div>
-								<div class="line-progress margin-b-20" data-prog-percent=".75"><div></div><p class="progress-title"><b>mySQL</b></p></div>
-							</div>
+						<div class="col-sm-12 col-md-12 col-lg-6">
+							<h4><b>Backend skills</b></h4>
+							<div class="line-progress margin-b-20" data-prog-percent=".70"><div></div><p class="progress-title"><b>Laravel</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".52"><div></div><p class="progress-title"><b>NodeJS</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".92"><div></div><p class="progress-title"><b>MongoDB</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".97"><div></div><p class="progress-title"><b>Redis</b></p></div>
+							<div class="line-progress margin-b-20" data-prog-percent=".72"><div></div><p class="progress-title"><b>mySQL</b></p></div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
+	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
 
-		<section class="experience-section section">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="heading">
-							<h3><b>Telegram Bot</b></h3>
-							<h6 class="font-lite-black"><b>BOT, BOT, BOT</b></h6>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9">
-						<div class="row">
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="iconbox margin-b-30">
-									<h5 class="font-yellow margin-tb-20"><b>TELEGRAM-INSTAPY-SCHEDULING <a
-												title="github instapy" href="https://github.com/Tkd-Alex/Telegram-InstaPy-Scheduling"><i
-													class="ion-social-github"></i></a> </b></h5>
-									<p class="font-semi-white">Telegram-InstaPy-Scheduling is bot for telegram which helps
-										user to schedule
-										InstaPy.</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="iconbox margin-b-30">
-									<h5 class="font-yellow margin-tb-20"><b>TNT-NOTIFY <a title="telegram tntnotify"
-												href="https://telegram.me/tntnotify_bot"><i
-													class="ion-paper-airplane"></i></a> <a title="github tntnotify" href="https://github.com/SantinoI/TNT-Notify"><i
-													class="ion-social-github"></i></a> </b></h5>
-									<p class="font-semi-white">TNT-Notify is a bot telegram that allows you to receive a
-										notification when a
-										new episode of your favorite TV series is online on tnt-village.</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="iconbox margin-b-30">
-									<h5 class="font-yellow margin-tb-20"><b>WHOUNFOLLOWED-TELEGRAM-BOT <a
-												title="telegram whounfollowed"
-												href="http://telegram.me/whounfollowed_bot"><i
-													class="ion-paper-airplane"></i></a> <a title="github whounfollowed" href="https://github.com/Tkd-Alex/WhoUnfollowed-Telegram-Bot"><i
-													class="ion-social-github"></i></a> </b></h5>
-									<p class="font-semi-white">Who have unfollowed you? Telegram notify you!</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="iconbox margin-b-30">
-									<h5 class="font-yellow margin-tb-20"><b>TELEGRAM-DMI-BOT <a title="telegram dmibot"
-												href="https://telegram.me/DMI_Bot"><i class="ion-paper-airplane"></i></a> <a
-												title="github dmibot" href="https://github.com/UNICT-DMI/Telegram-DMI-Bot"><i
-													class="ion-social-github"></i></a> </b>
-									</h5>
-									<p class="font-semi-white">Telegram-DMI-Bot is the platform that powers @DMI_bot, a
-										Telegram bot aided
-										at helping students find informations about professors, classes' schedules,
-										administration's office
-										hours and more.</p>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="iconbox margin-b-30">
-									<h5 class="font-yellow margin-tb-20"><b>WELCOME-BOT(TO GDG) <a
-												title="telegram welcomegdg" href="https://telegram.me/welcomegdg_bot"><i
-													class="ion-paper-airplane"></i></a> <a title="github welcomegdg" href="https://github.com/GDGCatania/Welcome-BOT-GDG"><i
-													class="ion-social-github"></i></a> </b></h5>
-									<p class="font-semi-white">Welcome To GDG it's a simple telegram bot. His job is to say
-										"Welcome" to new
-										members of telegram group, and invite them to join the GDG Catania Forum.</p>
-								</div>
-							</div>
-						</div>
+	<section class="experience-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="heading">
+						<h3><b>Telegram Bot</b></h3>
+						<h6 class="font-lite-black"><b>BOT, BOT, BOT</b></h6>
 					</div>
 				</div>
-			</div>
-		</section>
 
-		<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
-
-		<section class="education-section section">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="heading">
-							<h3><b>Project</b></h3>
-							<h6 class="font-lite-black"><b>UNIVERSITY & PERSONAL</b></h6>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9">
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>CARTOLIBRERIA GIANNETTO</b></h4>
-								<h5 class="font-yellow"><b>IONIC - ANGULAR - MYSQL - MONGODB - NODEJS - FIREBASE (FCM)</b>
+				<div class="col-sm-12 col-md-9">
+					<div class="row">
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="iconbox margin-b-30">
+								<h5 class="font-yellow margin-tb-20">
+									<b>TNT-NOTIFY
+										<a title="telegram tntnotify" href="https://telegram.me/tntnotify_bot"><i class="ion-paper-airplane"></i></a>
+										<a title="github tntnotify" href="https://github.com/SantinoI/TNT-Notify"><i class="ion-social-github"></i></a>
+									</b>
+									<br>
+									<b>RARBG-NOTIFY
+										<a title="telegram rarbgnotify" href="https://telegram.me/rarbgnotify_bot"><i class="ion-paper-airplane"></i></a>
+										<a title="github rarbgnotify" href="https://github.com/Tkd-Alex/RARBG-Notify"><i class="ion-social-github"></i></a>
+									</b>
 								</h5>
-								<h6 class="font-lite-black margin-t-10"><a title="playstore cartolibreria-giannetto"
-										href="https://play.google.com/store/apps/details?id=org.tkdalex.giannetto">https://play.google.com/store/apps/details?id=org.tkdalex.giannetto</a></h6>
-								<p class="margin-tb-20">Cartolibreria Giannetto is a mobile application that allows
-									customers to view
-									their profile sheet and the list of school adoptions</p>
+								<p class="font-semi-white">TNT-Notify and RARBG-Notify is a bot telegram that allows you to receive a notification when a new episode of your favorite TV series is online on tnt-village or rarbg.</p>
 							</div>
 						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>MYSTORE - MANAGEMENT SOFTWARE FOR JEWELERY.</b></h4>
-								<h5 class="font-yellow"><b>ANGULARJS - LARAVEL - BOOTSTRAP - IONIC</b></h5>
-								<p class="margin-tb-20">myStore born from exigence of private client for substitute an old software with complete sets of data. With a long and strong reverse engineering it was possible to create a new software and move all data on cloud.</p>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="iconbox margin-b-30">
+								<h5 class="font-yellow margin-tb-20"><b>TELEGRAM-INSTAPY-SCHEDULING <a title="github instapy" href="https://github.com/Tkd-Alex/Telegram-InstaPy-Scheduling"><i class="ion-social-github"></i></a> </b></h5>
+								<p class="font-semi-white">Telegram-InstaPy-Scheduling is bot for telegram which helps user to schedule InstaPy.</p>
 							</div>
 						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>GARÇON-RESTAURANT-MANAGER</b></h4>
-								<h5 class="font-yellow"><b>MONGODB - REACT NATIVE - NODEJS</b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github garcon-restaurant-manager" href="https://github.com/Tkd-Alex/Garcon-Restaurant-Manager">https://github.com/Tkd-Alex/Garcon-Restaurant-Manager</a></h6>
-								<p class="margin-tb-20">The application allows you to facilitate reservations within a restaurant. Providing a simple and intuitive interface, offering a 360 ° view of current orders to all institutions present, Garçon proves to be an excellent substitute for paper and pen.</p>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="iconbox margin-b-30">
+								<h5 class="font-yellow margin-tb-20"><b>WHOUNFOLLOWED-TELEGRAM-BOT <a title="telegram whounfollowed" href="http://telegram.me/whounfollowed_bot"><i class="ion-paper-airplane"></i></a> <a title="github whounfollowed"
+											href="https://github.com/Tkd-Alex/WhoUnfollowed-Telegram-Bot"><i class="ion-social-github"></i></a> </b></h5>
+								<p class="font-semi-white">Who have unfollowed you? Telegram notify you!</p>
 							</div>
 						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>FOOD-CLASSIFICATION</b></h4>
-								<h5 class="font-yellow"><b>PYTHON (SKYIMAGE - NUMPY - MATPLOTLIB) </b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github food-classification" href="https://github.com/Tkd-Alex/Food-Classification">https://github.com/Tkd-Alex/Food-Classification</a></h6>
-								<p class="margin-tb-20">This Social Media Management project allow to classificate picture between food and non-food. </p>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="iconbox margin-b-30">
+								<h5 class="font-yellow margin-tb-20"><b>TELEGRAM-DMI-BOT <a title="telegram dmibot" href="https://telegram.me/DMI_Bot"><i class="ion-paper-airplane"></i></a> <a title="github dmibot" href="https://github.com/UNICT-DMI/Telegram-DMI-Bot"><i
+												class="ion-social-github"></i></a> </b>
+								</h5>
+								<p class="font-semi-white">Telegram-DMI-Bot is the platform that powers @DMI_bot, a Telegram bot aided at helping students find informations about professors, classes' schedules, administration's office hours and more.</p>
 							</div>
 						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>GIT-FIND-THE-SKILLS</b></h4>
-								<h5 class="font-yellow"><b>JAVA (REPODRILLER)</b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github git-find-the-skills" href="https://github.com/Tkd-Alex/GIT-Find-The-Skills">https://github.com/Tkd-Alex/GIT-Find-The-Skills</a></h6>
-								<p class="margin-tb-20">The GOAL of GIT-Find-The-Skills is the classification of the commiters present in a git repository. Each user may have collaboratored differently in a project, in particular he can be a backend, frontend developer, or writer.</p>
-							</div>
-						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>UNICTF - SCOREBOT 2019</b></h4>
-								<h5 class="font-yellow"><b>PYTHON (FLASK - MONGODB)</b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github unict-scorebot" href="https://github.com/unictf/unictf-2019/tree/master/scorebot">https://github.com/unictf/unictf-2019/tree/master/scorebot</a></h6>
-								<p class="margin-tb-20">Scorebot is a scoring engine for CTF competitions. It is built upon a Blue Team / Red Team model, where Blue Teams defend flags against Red teams. (Blue Teams may also attack other Blue Teams to steal flags). Scoring is based upon flags stolen, scored service up time, and injects submitted (there is no scoring tracking for injects yet).</p>
-							</div>
-						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>TELEGRAM-GROUP-FARM</b></h4>
-								<h5 class="font-yellow"><b>(PYROGRAM - MONGODB - MULTIPROCESSING)</b></h5>
-								<p class="margin-tb-20">Scraping users from Telegram groups and invite in another group.</p>
-							</div>
-						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>IG-DM-Spammer</b></h4>
-								<h5 class="font-yellow"><b>PYTHON (INSTABOT - MONGODB - MULTIPROCESSING)</b></h5>
-								<p class="margin-tb-20">Spam message with multiple Instagram accounts. The accounts are scraped from likers of different target.</p>
-							</div>
-						</div>
-
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b>INSTABOT - PR #1008</b></h4>
-								<h5 class="font-yellow"><b>PYTHON (REQUESTS)</b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github instabot" href="https://github.com/instagrambot/instabot/pull/1008">https://github.com/instagrambot/instabot/pull/1008</a></h6>
-								<p class="margin-tb-20">Pull request for the open source project instabot. Implement the login flow for emulate human pattern. Fix some POST request data.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="heading">
-							<h3><b>Pubblications</b></h3>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9">
-						<div class="education-wrapper">
-							<div class="education margin-b-50">
-								<h4><b><a title="paper smart" href="http://www.stringology.org/papers/PSC2016.pdf#page=109">THE STRING MATCHING ALGORITHMS RESEARCH TOOL</a></b></h4>
-								<h5 class="font-yellow"><b>C - C++ - QT </b></h5>
-								<h6 class="font-lite-black margin-t-10"><a title="github smart-gui" href="https://github.com/smart-tool/">http://github.com/smart-tool/</a></h6>
-								<p class="margin-tb-20">Proceedings of the Prague Stringology Conference 2016, pages 99--111, 978-80-01-05996-8, 2016. Smart is an open source software which provides a standard framework for re-searchers in string matching. It helps users to test, design, evaluate and under-stand existing solutions for the exact string matching problem. Moreover it provides the implementation of (almost) all string matching algorithms and a wide cor-pus of text buffers.</p>
+						<div class="col-sm-6 col-md-6 col-lg-4">
+							<div class="iconbox margin-b-30">
+								<h5 class="font-yellow margin-tb-20"><b>WELCOME-BOT(TO GDG) <a title="telegram welcomegdg" href="https://telegram.me/welcomegdg_bot"><i class="ion-paper-airplane"></i></a> <a title="github welcomegdg"
+											href="https://github.com/GDGCatania/Welcome-BOT-GDG"><i class="ion-social-github"></i></a> </b></h5>
+								<p class="font-semi-white">Welcome To GDG it's a simple telegram bot. His job is to say "Welcome" to new members of telegram group, and invite them to join the GDG Catania Forum.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
 
-		</section>
+	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
 
-		<footer class="copyright">
-			<p class="mb-2">
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <br class="mobile-break"> This template is made with <i class="ion-heart" aria-hidden="true"></i> by
-				<a title="colorlib" href="https://colorlib.com" target="_blank">Colorlib</a>
-				<br>
-				Edited by <a title="alessandromaggio" href="https://alessandromaggio.it" target="_blank">Tkd-Alex</a> | alessandromaggio.it
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			</p>
-			<div class="fb-like" data-href="https://www.facebook.com/tkdalex.social" data-layout="button_count"
-				data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-			<div class="fb-share-button" data-href="https://www.alessandromaggio.it/" data-layout="button"
-				data-size="small"><a target="_blank" title="facebook share"
-					href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.alessandromaggio.it%2F&amp;src=sdkpreparse"
-					class="fb-xfbml-parse-ignore">Share</a></div>
+	<section class="education-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="heading">
+						<h3><b>Project</b></h3>
+						<h6 class="font-lite-black"><b>UNIVERSITY & PERSONAL</b></h6>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-9">
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>CARTOLIBRERIA GIANNETTO</b></h4>
+							<h5 class="font-yellow"><b>IONIC - ANGULAR - MYSQL - MONGODB - NODEJS - FIREBASE (FCM)</b>
+							</h5>
+							<h6 class="font-lite-black margin-t-10"><a title="playstore cartolibreria-giannetto" href="https://play.google.com/store/apps/details?id=org.tkdalex.giannetto">https://play.google.com/store/apps/details?id=org.tkdalex.giannetto</a>
+							</h6>
+							<p class="margin-tb-20">Cartolibreria Giannetto is a mobile application that allows customers to view their profile sheet and the list of school adoptions</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>MYSTORE - MANAGEMENT SOFTWARE FOR JEWELERY.</b></h4>
+							<h5 class="font-yellow"><b>ANGULARJS - LARAVEL - BOOTSTRAP - IONIC</b></h5>
+							<p class="margin-tb-20">myStore born from exigence of private client for substitute an old software with complete sets of data. With a long and strong reverse engineering it was possible to create a new software and move all data on cloud.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>GARÇON-RESTAURANT-MANAGER</b></h4>
+							<h5 class="font-yellow"><b>MONGODB - REACT NATIVE - NODEJS</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github garcon-restaurant-manager" href="https://github.com/Tkd-Alex/Garcon-Restaurant-Manager">https://github.com/Tkd-Alex/Garcon-Restaurant-Manager</a>
+							</h6>
+							<p class="margin-tb-20">The application allows you to facilitate reservations within a restaurant. Providing a simple and intuitive interface, offering a 360 ° view of current orders to all institutions present, Garçon proves to be an excellent substitute for paper and pen.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>FOOD-CLASSIFICATION</b></h4>
+							<h5 class="font-yellow"><b>PYTHON (SKYIMAGE - NUMPY - MATPLOTLIB) </b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github food-classification" href="https://github.com/Tkd-Alex/Food-Classification">https://github.com/Tkd-Alex/Food-Classification</a>
+							</h6>
+							<p class="margin-tb-20">This Social Media Management project allow to classificate picture between food and non-food. </p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>GIT-FIND-THE-SKILLS</b></h4>
+							<h5 class="font-yellow"><b>JAVA (REPODRILLER)</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github git-find-the-skills" href="https://github.com/Tkd-Alex/GIT-Find-The-Skills">https://github.com/Tkd-Alex/GIT-Find-The-Skills</a>
+							</h6>
+							<p class="margin-tb-20">The GOAL of GIT-Find-The-Skills is the classification of the committers present in a git repository. Each user may have collaborators differently in a project, in particular he can be a backend, frontend developer, or writer.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>UNICTF - SCOREBOT 2019</b></h4>
+							<h5 class="font-yellow"><b>PYTHON (FLASK) - MONGODB</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github unict-scorebot" href="https://github.com/unictf/unictf-2019/tree/master/scorebot">https://github.com/unictf/unictf-2019/tree/master/scorebot</a>
+							</h6>
+							<p class="margin-tb-20">Scorebot is a scoring engine for CTF competitions. It is built upon a Blue Team / Red Team model, where Blue Teams defend flags against Red teams. (Blue Teams may also attack other Blue Teams to steal flags). 
+								Scoring is based upon flags stolen, scored service up time, and injects submitted (there is no scoring tracking for injects yet).</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>TELEGRAM-GROUP-FARM</b></h4>
+							<h5 class="font-yellow"><b>PYTHON (PYROGRAM - MULTIPROCESSING) - MONGODB</b></h5>
+							<p class="margin-tb-20">Scraping users from Telegram groups and invite in another group.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>IG-DM-SPAMMER</b></h4>
+							<h5 class="font-yellow"><b>PYTHON (INSTABOT - MULTIPROCESSING) - MONGODB</b></h5>
+							<p class="margin-tb-20">Spam message with multiple Instagram accounts. The accounts are
+								scraped from likers of different target.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>INSTABOT - PR #1008</b></h4>
+							<h5 class="font-yellow"><b>PYTHON (REQUESTS)</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github instabot" href="https://github.com/instagrambot/instabot/pull/1008">https://github.com/instagrambot/instabot/pull/1008</a>
+							</h6>
+							<p class="margin-tb-20">Pull request for the open source project instabot. Implement the login flow for emulate human pattern. Fix some POST request data.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>MIAUTOCERTIFICO.IT</b></h4>
+							<h5 class="font-yellow"><b>PHP - HTML - JAVASCRIPT</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github miautocertifico.it" href="https://github.com/Tkd-Alex/miautocertifico.it">https://github.com/Tkd-Alex/miautocertifico.it</a>
+							</h6>
+							<p class="margin-tb-20">This website allows you to generate your self-declaration always updated, and receive it directly on the e-mail or on your smartphone, being able to download and print it.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>HERO-SAGA</b></h4>
+							<h5 class="font-yellow"><b>UNITY - C#</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github hero-saga" href="https://github.com/Tkd-Alex/miautocertifico.it">https://github.com/Tkd-Alex/miautocertifico.it</a>
+							</h6>
+							<p class="margin-tb-20">University project created for the Digital Games Development course. The video game is a simple 2D platformer whose aim is to get the best score and climb the rankings.</p>
+						</div>
+					</div>
+
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>DTN NETWORKS : EPIDEMIC – PROPHET NS3</b></h4>
+							<h5 class="font-yellow"><b>PYTHON - NS3 - C</b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github dtn-networks" href="https://github.com/SantinoI/DTN-Networks-ns3">https://github.com/SantinoI/DTN-Networks-ns3</a>
+							</h6>
+							<p class="margin-tb-20">Comparative performance analysis between two different DTN Network protocolsL: Epidemic and Prophet. The protocols were implemented through the use of the NS-3 Network Simulator software and then the performances were analyzed through precise simulations.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="heading">
+						<h3><b>Publications</b></h3>
+					</div>
+				</div>
+
+				<div class="col-sm-12 col-md-9">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b><a title="paper smart" href="http://www.stringology.org/papers/PSC2016.pdf#page=109">THE STRING
+										MATCHING ALGORITHMS RESEARCH TOOL</a></b></h4>
+							<h5 class="font-yellow"><b>C - C++ - QT </b></h5>
+							<h6 class="font-lite-black margin-t-10"><a title="github smart-gui" href="https://github.com/smart-tool/">http://github.com/smart-tool/</a></h6>
+							<p class="margin-tb-20">Proceedings of the Prague Stringology Conference 2016, pages
+								99--111, 978-80-01-05996-8, 2016. Smart is an open source software which provides a
+								standard framework for re-searchers in string matching. It helps users to test, design,
+								evaluate and under-stand existing solutions for the exact string matching problem.
+								Moreover it provides the implementation of (almost) all string matching algorithms and a
+								wide cor-pus of text buffers.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="copyright">
+		<p class="mb-2">
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			Copyright &copy;<script>
+				document.write(new Date().getFullYear());
+			</script> All rights reserved <br class="mobile-break"> This template is made with <i class="ion-heart" aria-hidden="true"></i> by
+			<a title="colorlib" href="https://colorlib.com" target="_blank">Colorlib</a>
 			<br>
-			<a class="twitter-share-button" title="twitter" href="https://twitter.com/intent/tweet">Tweet</a>
-			<a class="twitter-follow-button" title="twitter" data-show-count="false"
-				href="https://twitter.com/TkdAxel">Follow @TkdAxel</a>
+			Edited by <a title="alessandromaggio" href="https://alessandromaggio.it" target="_blank">Tkd-Alex</a> |
+			alessandromaggio.it
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		</p>
+		<div class="fb-like" data-href="https://www.facebook.com/tkdalex.social" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+		<div class="fb-share-button" data-href="https://www.alessandromaggio.it/" data-layout="button" data-size="small"><a target="_blank" title="facebook share"
+				href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.alessandromaggio.it%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+		<br>
+		<a class="twitter-share-button" title="twitter" href="https://twitter.com/intent/tweet">Tweet</a>
+		<a class="twitter-follow-button" title="twitter" data-show-count="false" href="https://twitter.com/TkdAxel">Follow @TkdAxel</a>
 
-		</footer>
+	</footer>
 
-		<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
+	<p hidden>alessandromaggio.it | fullstack developer & bot addicted // alessandromaggio</p>
 
-	</body>
+</body>
 
-	<!-- FONT -->
-	<script type="text/javascript">
-	  WebFontConfig = { google: { families: [ 'Poppins:400,500,600,700|Allura'] } };
-	  (function() { var wf = document.createElement('script'); wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js'; wf.type = 'text/javascript'; wf.async = 'true'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wf, s); })(); 
-	</script>
+<!-- FONT -->
+<script type="text/javascript">
+	WebFontConfig = {
+		google: {
+			families: ['Poppins:400,500,600,700|Allura']
+		}
+	};
+	(function () {
+		var wf = document.createElement('script');
+		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			'://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	})();
+</script>
 
-	<!-- SCRIPTS -->
-	<script>
-      var cb = function() { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css'; var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-	</script>
+<!-- SCRIPTS -->
+<script>
+	var cb = function () {
+		var l = document.createElement('link');
+		l.rel = 'stylesheet';
+		l.href = 'https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css';
+		var h = document.getElementsByTagName('head')[0];
+		h.parentNode.insertBefore(l, h);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(cb);
+	else window.addEventListener('load', cb);
+</script>
 
-	<script>
-      var cb = function() { var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'css/ionicons.min.css'; var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-	</script>
+<script>
+	var cb = function () {
+		var l = document.createElement('link');
+		l.rel = 'stylesheet';
+		l.href = 'css/ionicons.min.css';
+		var h = document.getElementsByTagName('head')[0];
+		h.parentNode.insertBefore(l, h);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(cb);
+	else window.addEventListener('load', cb);
+</script>
 
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.0";fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
-	</script>
+<div id="fb-root"></div>
+<script>
+	(function (d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
 
-	<script>
-	window.twttr=function(t,e,r){var n,i=t.getElementsByTagName(e)[0],w=window.twttr||{};return t.getElementById(r)?w:((n=t.createElement(e)).id=r,n.src="https://platform.twitter.com/widgets.js",i.parentNode.insertBefore(n,i),w._e=[],w.ready=function(t){w._e.push(t)},w)}(document,"script","twitter-wjs");
-    </script>
+<script>
+	window.twttr = function (t, e, r) {
+		var n, i = t.getElementsByTagName(e)[0],
+			w = window.twttr || {};
+		return t.getElementById(r) ? w : ((n = t.createElement(e)).id = r, n.src =
+			"https://platform.twitter.com/widgets.js", i.parentNode.insertBefore(n, i), w._e = [], w.ready =
+			function (t) {
+				w._e.push(t)
+			}, w)
+	}(document, "script", "twitter-wjs");
+</script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
-    <script async src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+<script async src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
 
-    <script async src="js/jquery.waypoints.min.js"></script>
-    <script async src="js/progressbar.min.js"></script>
-    <script async src="js/scripts.min.js"></script>
+<script async src="js/jquery.waypoints.min.js"></script>
+<script async src="js/progressbar.min.js"></script>
+<script async src="js/scripts.min.js"></script>
 
-    <style type="text/css">
-        .fb_iframe_widget { vertical-align: top; }
-        .fb_iframe_widget span { vertical-align: top; }
-        .twitter-share-button { margin-top: 4px; }
-        .twitter-follow-button { margin-top: 4px; }
-    </style>
+<style type="text/css">
+	.fb_iframe_widget {
+		vertical-align: top;
+	}
+
+	.fb_iframe_widget span {
+		vertical-align: top;
+	}
+
+	.twitter-share-button {
+		margin-top: 4px;
+	}
+
+	.twitter-follow-button {
+		margin-top: 4px;
+	}
+</style>
 
 </html>
