@@ -1,86 +1,72 @@
-(function ($) {
-	"use strict";
+$(window).on('load', function () {
 
-	// LINE PROGRESS BAR
-	enableLineProgress();
+	// ISOTOPE PORTFOLIO WITH FILTER
+	if (isExists('.portfolioContainer')) {
+		var $container = $('.portfolioContainer');
+		$container.isotope({
+			filter: '*',
+			animationOptions: {
+				duration: 750,
+				easing: 'linear',
+				queue: false
+			}
+		});
 
-	// RADIAL PROGRESS BAR
-	enableRadialProgress();
+		$('.portfolioFilter a').click(function () {
+			$('.portfolioFilter .current').removeClass('current');
+			$(this).addClass('current');
 
-	// ACCORDIAN
-	panelAccordian();
-
-	$(window).on('load', function () {
-
-		// ISOTOPE PORTFOLIO WITH FILTER
-		if (isExists('.portfolioContainer')) {
-			var $container = $('.portfolioContainer');
+			var selector = $(this).attr('data-filter');
 			$container.isotope({
-				filter: '*',
+				filter: selector,
 				animationOptions: {
 					duration: 750,
 					easing: 'linear',
 					queue: false
 				}
 			});
-
-			$('.portfolioFilter a').click(function () {
-				$('.portfolioFilter .current').removeClass('current');
-				$(this).addClass('current');
-
-				var selector = $(this).attr('data-filter');
-				$container.isotope({
-					filter: selector,
-					animationOptions: {
-						duration: 750,
-						easing: 'linear',
-						queue: false
-					}
-				});
-				return false;
-			});
-		}
-
-	});
-
-
-	$('a[href="#"]').on('click', function (event) {
-		return;
-	});
-
-
-	if ($.isFunction($.fn.fluidbox)) {
-		$('a').fluidbox();
+			return false;
+		});
 	}
 
-	var countCounterUp = 0;
+	// LINE PROGRESS BAR
+	enableLineProgress();
+	// RADIAL PROGRESS BAR
+	enableRadialProgress();
+	// ACCORDIAN
+	panelAccordian();
 
-	var a = 0;
+});
 
+
+$('a[href="#"]').on('click', function (event) {
+	return;
+});
+if ($.isFunction($.fn.fluidbox)) {
+	$('a').fluidbox();
+}
+
+var countCounterUp = 0;
+var a = 0;
+
+countCounterUp = enableCounterUp(countCounterUp);
+
+$(window).on('scroll', function () {
 	countCounterUp = enableCounterUp(countCounterUp);
-
-	$(window).on('scroll', function () {
-
-		countCounterUp = enableCounterUp(countCounterUp);
-
-	});
+});
 
 
-})(jQuery);
 
 function panelAccordian() {
-
 	var panelTitle = $('.panel-title');
 	panelTitle.on('click', function () {
 		$('.panel-title').removeClass('active');
 		$(this).toggleClass('active');
 
 	});
-
 }
 
 function enableRadialProgress() {
-
 	$(".radial-progress").each(function () {
 		var $this = $(this),
 			progPercent = $this.data('prog-percent');
@@ -127,7 +113,6 @@ function enableRadialProgress() {
 }
 
 function enableLineProgress() {
-
 	$(".line-progress").each(function () {
 		var $this = $(this),
 			progPercent = $this.data('prog-percent');
@@ -144,9 +129,7 @@ function enableLineProgress() {
 				height: '100%'
 			},
 			text: {
-				style: {
-
-				},
+				style: {},
 			},
 			from: {
 				color: '#FFEA82'
